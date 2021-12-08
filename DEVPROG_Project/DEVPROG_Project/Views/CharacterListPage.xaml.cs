@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DEVPROG_Project.Models;
+using DEVPROG_Project.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,24 @@ namespace DEVPROG_Project.Views
         public CharacterListPage()
         {
             InitializeComponent();
+            ShowCharacters();
+
+        }
+
+        private async void ShowCharacters()
+        {
+            List<Character> characters = await ThronesRepository.GetCharacters();
+            lvwCharacterList.ItemsSource = characters;
+        }
+
+        private void lvwCharacterList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (lvwCharacterList.SelectedItem != null)
+            {
+                Character info = (Character)lvwCharacterList.SelectedItem;
+                Navigation.PushAsync(new CharacterDetailPage(info));
+                lvwCharacterList.SelectedItem = null;
+            }
         }
     }
 }

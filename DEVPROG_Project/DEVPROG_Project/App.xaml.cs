@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DEVPROG_Project.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace DEVPROG_Project
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new CharacterListPage();
         }
 
         protected override void OnStart()
