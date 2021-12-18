@@ -23,8 +23,8 @@
         <StackLayout>
             <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,16,0,0" Padding="0,0,0,0">
                     <StackLayout>
-                        
-                    <Image Source="{Binding ImageUrl}" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" Margin="0,0,0,0"/>
+
+                    <Image x:Name="imgChar" Source="" HeightRequest="200" WidthRequest="200" HorizontalOptions="Center" Margin="0,0,0,0"/>
                         
                     </StackLayout>
                 </Frame>
@@ -35,20 +35,20 @@
                     <Label Text="Details" FontSize="30" FontAttributes="Bold" TextColor="White" Margin="16,8,0,0"/>
 
 
-                    <Label  x:Name="lblFirstName" FontSize="25" FontAttributes="Bold" TextColor="#F2C8EE" Margin="16,16,0,0"/>
-                    <BoxView Color="#F2C8EE" HeightRequest="1" Margin="16,0,16,0"/>
+                    <Label  x:Name="lblFirstName" FontSize="18" FontAttributes="Bold" TextColor="White" Margin="16,16,0,0"/>
+                    <BoxView Color="White" HeightRequest="1" Margin="16,0,16,0"/>
 
-                    <Label  x:Name="lblLastName" FontSize="25" FontAttributes="Bold" TextColor="#EE786C" Margin="16,16,0,0"/>
-                    <BoxView Color="#EE786C" HeightRequest="1" Margin="16,0,16,0"/>
+                    <Label  x:Name="lblLastName" FontSize="18" FontAttributes="Bold" TextColor="White" Margin="16,16,0,0"/>
+                    <BoxView Color="White" HeightRequest="1" Margin="16,0,16,0"/>
 
-                    <Label  x:Name="lblFullName" FontSize="25" FontAttributes="Bold" TextColor="#FEB95A" Margin="16,16,0,0"/>
-                    <BoxView Color="#FEB95A" HeightRequest="1" Margin="16,0,16,0"/>
+                    <Label  x:Name="lblFullName" FontSize="18" FontAttributes="Bold" TextColor="White" Margin="16,16,0,0"/>
+                    <BoxView Color="White" HeightRequest="1" Margin="16,0,16,0"/>
 
-                    <Label x:Name="lblTitle" FontSize="25" FontAttributes="Bold" TextColor="#08ADF6" Margin="16,16,0,0"/>
-                    <BoxView Color="#08ADF6" HeightRequest="1" Margin="16,0,16,16"/>
+                    <Label Text="Title: " x:Name="lblTitle" FontSize="18" FontAttributes="Bold" TextColor="White" Margin="16,16,0,0"/>
+                    <BoxView Color="White" HeightRequest="1" Margin="16,0,16,0"/>
 
-                    <Label  x:Name="lblFamily" FontSize="25" FontAttributes="Bold" TextColor="#F2C8EE" Margin="16,16,0,0"/>
-                    <BoxView Color="#F2C8EE" HeightRequest="1" Margin="16,0,16,0"/>
+                    <Label  x:Name="lblFamily" FontSize="18" FontAttributes="Bold" TextColor="White" Margin="16,16,0,0"/>
+                    <BoxView Color="White" HeightRequest="1" Margin="16,0,16,16"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using DEVPROG_Project.Repositories;
+using DEVPROG_Project.Views;
 
 namespace DEVPROG_Project
 {
@@ -17,6 +18,7 @@ namespace DEVPROG_Project
         {
             InitializeComponent();
             TestRepositories();
+            //Navigation.PushAsync(new CharacterListPage());
         }
 
         private async void TestRepositories()

@@ -24,12 +24,13 @@ namespace DEVPROG_Project.Views
 
         private void ShowSelectedCharacter()
         {
+            imgChar.Source = Details.ImageUrl;
             lblFullNameTop.Text = Details.FullName;
-            lblFamily.Text = Details.Family;
-            lblFirstName.Text = Details.FirstName;
-            lblFullName.Text = Details.FullName;
-            lblLastName.Text = Details.LastName;
-            lblTitle.Text = Details.Title;
+            lblFamily.Text = "Family: " + Details.Family;
+            lblFirstName.Text = "First Name: " + Details.FirstName;
+            lblFullName.Text = "Full Name: " + Details.FullName;
+            lblLastName.Text = "Last Name: " + Details.LastName;
+            lblTitle.Text = "Title: " + Details.Title;
         }
 
         private void imgBackBtn(object sender, EventArgs e)
