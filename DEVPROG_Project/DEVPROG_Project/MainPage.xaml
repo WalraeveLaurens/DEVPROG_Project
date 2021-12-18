@@ -1,24 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DEVPROG_Project.MainPage">
+             x:Class="DEVPROG_Project.MainPage"
+             xmlns:local="clr-namespace:DEVPROG_Project" xmlns:local1="clr-namespace:DEVPROG_Project.Models">
+    
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+    <StackLayout Padding="32,16,32,16" BackgroundColor="#171721">
+        <Label Text="Game Of Thrones" TextColor="#FFFFFF" FontSize="30" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+
+        <Frame Margin="0,32,0,0" Padding="1" BackgroundColor="#171721" BorderColor="White">
+            <Image Source="{local1:ImageResourceExtensions DEVPROG_Project.Assets.Logo.png}" WidthRequest="311" HeightRequest="224" Aspect="AspectFit" />
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+
+        <Button x:Name="btnShowList" Clicked="btnShowList_Clicked" Margin="0,28,0,0" Text="Character List" FontAttributes="Bold" FontSize="24" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="52"/>
+        <Button x:Name="btwShowFamily" Clicked="btwShowFamily_Clicked"  Margin="0,28,0,0" Text="Family List" FontAttributes="Bold" FontSize="24" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="52"/>
+        <Button x:Name="btnShowRndm" Clicked="btnShowRndm_Clicked" Margin="0,28,0,0" Text="Random Character" FontAttributes="Bold" FontSize="24" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="52"/>
+        <Button x:Name="btnAddChar" Clicked="btnAddChar_Clicked" Margin="0,28,0,0" Text="Add Character" FontAttributes="Bold" FontSize="24" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="52"/>
     </StackLayout>
+
 
 </ContentPage>

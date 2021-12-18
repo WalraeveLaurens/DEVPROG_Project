@@ -11,7 +11,7 @@ namespace DEVPROG_Project
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new CharacterListPage());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
