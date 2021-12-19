@@ -17,8 +17,28 @@ namespace DEVPROG_Project.Views {
     public partial class AddCharacterPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::DEVPROG_Project.Models.CustomEntry FirstName;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::DEVPROG_Project.Models.CustomEntry LastName;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::DEVPROG_Project.Models.CustomEntry Title;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::DEVPROG_Project.Models.CustomEntry Family;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::DEVPROG_Project.Models.CustomEntry Image;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AddCharacterPage));
+            FirstName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DEVPROG_Project.Models.CustomEntry>(this, "FirstName");
+            LastName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DEVPROG_Project.Models.CustomEntry>(this, "LastName");
+            Title = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DEVPROG_Project.Models.CustomEntry>(this, "Title");
+            Family = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DEVPROG_Project.Models.CustomEntry>(this, "Family");
+            Image = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DEVPROG_Project.Models.CustomEntry>(this, "Image");
         }
     }
 }

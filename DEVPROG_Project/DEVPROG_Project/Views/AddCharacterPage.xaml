@@ -1,12 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DEVPROG_Project.Views.AddCharacterPage">
+             x:Class="DEVPROG_Project.Views.AddCharacterPage"
+             xmlns:local="clr-namespace:DEVPROG_Project" xmlns:local1="clr-namespace:DEVPROG_Project.Models"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="32,16,32,32" BackgroundColor="#171721">
+            <!--TOPBAR-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions DEVPROG_Project.Assets.ArrowLeft.png}" WidthRequest="35" HeightRequest="35">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Grid.Column="1" Margin="60,0,87,0" Text="Add Character" TextColor="#ffffff" FontSize="24" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </Grid>
+
+
+            <Label Text="Characater Details" FontAttributes="Bold" FontSize="28" TextColor="White" Margin="0,32,0,0"/>
+
+            <local1:CustomEntry x:Name="FirstName" FontSize="24" FontAttributes="Bold" Placeholder="First Name" TextColor="White" Opacity="0.6" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" Margin="0,8,0,0"/>
+            <BoxView HeightRequest="1" Color="White" Margin="0,-8,0,0"/>
+
+            <local1:CustomEntry x:Name="LastName" FontSize="24" FontAttributes="Bold" Placeholder="Last Name" TextColor="White" Opacity="0.6" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" Margin="0,8,0,0"/>
+            <BoxView HeightRequest="1" Color="White" Margin="0,-8,0,0"/>
+
+            <local1:CustomEntry x:Name="Title" FontSize="24" FontAttributes="Bold" Placeholder="Title" TextColor="White" Opacity="0.6" PlaceholderColor="White" ClearButtonVisibility="WhileEditing"/>
+            <BoxView HeightRequest="1" Color="White" Margin="0,-8,0,0"/>
+
+            <local1:CustomEntry x:Name="Family" FontSize="24" FontAttributes="Bold" Placeholder="Family" TextColor="White" Opacity="0.6" PlaceholderColor="White" ClearButtonVisibility="WhileEditing"/>
+            <BoxView HeightRequest="1" Color="White" Margin="0,-8,0,0"/>
+
+            <local1:CustomEntry x:Name="Image" FontSize="24" FontAttributes="Bold" Placeholder="Image" TextColor="White" Opacity="0.6" PlaceholderColor="White" ClearButtonVisibility="WhileEditing"/>
+            <BoxView HeightRequest="1" Color="White" Margin="0,-8,0,0"/>
+
+
+            <Button Clicked="Button_Clicked"  Margin="0,48,0,0" Text="Submit" FontAttributes="Bold" FontSize="28" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="72"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
