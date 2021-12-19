@@ -17,19 +17,19 @@ namespace DEVPROG_Project
         public MainPage()
         {
             InitializeComponent();
-            TestRepositories();
+            //TestRepositories();
             //Navigation.PushAsync(new CharacterListPage());
         }
 
         private async void TestRepositories()
         {
-            Debug.WriteLine("Test Models");
-            //Haal alle boards op en toon de naam
-            List<Character> characters = await ThronesRepository.GetCharacters();
-            foreach (var item in characters)
-            {
-                Debug.WriteLine(item.FullName);
-            }
+            //Debug.WriteLine("Test Models");
+            ////Haal alle boards op en toon de naam
+            //List<Character> characters = await ThronesRepository.GetCharacters();
+            //foreach (var item in characters)
+            //{
+            //    Debug.WriteLine(item.FullName);
+            //}
 
             
 
@@ -45,9 +45,19 @@ namespace DEVPROG_Project
             Navigation.PushAsync(new FamilyList());
         }
 
-        private void btnShowRndm_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new CharacterListPage());
+
+        private async void btnShowRndm_Clicked(object sender, EventArgs e)
+        {            
+            List<Character> characters = await ThronesRepository.GetCharacters();
+
+            Random rnd = new Random();
+            Character character = characters[rnd.Next(characters.Count)];
+
+
+
+            
+            await Navigation.PushAsync(new CharacterDetailPage(character));
+
         }
 
         private void btnAddChar_Clicked(object sender, EventArgs e)
