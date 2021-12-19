@@ -29,7 +29,7 @@ namespace DEVPROG_Project.Views {
         private global::DEVPROG_Project.Models.CustomEntry Family;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::DEVPROG_Project.Models.CustomEntry Image;
+        private global::DEVPROG_Project.Models.CustomEntry ImageUrl;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
@@ -38,7 +38,7 @@ namespace DEVPROG_Project.Views {
             LastName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DEVPROG_Project.Models.CustomEntry>(this, "LastName");
             Title = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DEVPROG_Project.Models.CustomEntry>(this, "Title");
             Family = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DEVPROG_Project.Models.CustomEntry>(this, "Family");
-            Image = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DEVPROG_Project.Models.CustomEntry>(this, "Image");
+            ImageUrl = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DEVPROG_Project.Models.CustomEntry>(this, "ImageUrl");
         }
     }
 }

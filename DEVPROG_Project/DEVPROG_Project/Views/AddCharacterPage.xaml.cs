@@ -1,4 +1,5 @@
 ﻿using DEVPROG_Project.Models;
+using DEVPROG_Project.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +19,18 @@ namespace DEVPROG_Project.Views
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
+            List<Character> characters = await ThronesRepository.GetCharacters();
+            int i = characters.Count();
+            List<Character> NewCharacter = new List<Character>();
+            //id
+            NewCharacter.AddRange(i++, FirstName.Text, LastName.Text, FirstName.Text +  " " + LastName.Text, Title.Text, Family.Text, "", ImageUrl.Text);
+
+
             //Character info = (Character)lvwCharacterList.SelectedItem;
             //Navigation.PushAsync(new CharacterDetailPage());
-            
+
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)

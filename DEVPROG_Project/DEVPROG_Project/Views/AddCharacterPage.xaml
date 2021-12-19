@@ -36,7 +36,7 @@
             <local1:CustomEntry x:Name="Family" FontSize="24" FontAttributes="Bold" Placeholder="Family" TextColor="White" Opacity="0.6" PlaceholderColor="White" ClearButtonVisibility="WhileEditing"/>
             <BoxView HeightRequest="1" Color="White" Margin="0,-8,0,0"/>
 
-            <local1:CustomEntry x:Name="Image" FontSize="24" FontAttributes="Bold" Placeholder="Image" TextColor="White" Opacity="0.6" PlaceholderColor="White" ClearButtonVisibility="WhileEditing"/>
+            <local1:CustomEntry x:Name="ImageUrl" FontSize="24" FontAttributes="Bold" Placeholder="Image Url" TextColor="White" Opacity="0.6" PlaceholderColor="White" ClearButtonVisibility="WhileEditing"/>
             <BoxView HeightRequest="1" Color="White" Margin="0,-8,0,0"/>
 
 

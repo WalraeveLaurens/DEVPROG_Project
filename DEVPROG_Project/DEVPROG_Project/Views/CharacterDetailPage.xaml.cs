@@ -24,7 +24,10 @@ namespace DEVPROG_Project.Views
 
         private void ShowSelectedCharacter()
         {
-            imgChar.Source = Details.ImageUrl;
+            //imgChar.Source = Details.ImageUrl;
+            imgChar.Source = "https://static.wikia.nocookie.net/gameofthrones/images/9/9f/Profile-Littlefinger.png/revision/latest?cb=20170826005231";
+
+
             lblFullNameTop.Text = Details.FullName;
             lblFamily.Text = "Family: " + Details.Family;
             lblFirstName.Text = "First Name: " + Details.FirstName;

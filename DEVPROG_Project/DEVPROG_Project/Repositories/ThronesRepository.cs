@@ -43,6 +43,14 @@ namespace DEVPROG_Project.Repositories
             }
         }
 
+
+        public async static Task AddCardAsync(Character newCharacter)
+        {
+            using (HttpClient client = await GetClient())
+            {
+                string url = $
+            }
+        }
         
 
     }
