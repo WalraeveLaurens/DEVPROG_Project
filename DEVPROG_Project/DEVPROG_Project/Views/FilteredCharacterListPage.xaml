@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DEVPROG_Project.Views.FilteredCharacterListPage">
+    <ContentPage.Content>
+        <StackLayout Padding="32,16,32,32" BackgroundColor="#171721">
+            <ListView x:Name="lvwCharacterList" RowHeight="50" SeparatorColor="Transparent" ItemSelected="lvwCharacterList_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BackgroundColor="#171721" Margin="8" Padding="8,0" BorderColor="White">
+                                <Grid>
+                                    <Label Text="{Binding FullName}" TextColor="White" VerticalOptions="Center" />
+                                    <Label Text="..." TextColor="White" VerticalOptions="Center" HorizontalOptions="End" />
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

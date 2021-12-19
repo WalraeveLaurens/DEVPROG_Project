@@ -16,3 +16,5 @@ C:\Users\walra\Desktop\DEVPROG_Project\DEVPROG_Project\DEVPROG_Project\obj\Debug
 C:\Users\walra\Desktop\DEVPROG_Project\DEVPROG_Project\DEVPROG_Project\obj\Debug\netstandard2.0\DEVPROG_Project.dll
 C:\Users\walra\Desktop\DEVPROG_Project\DEVPROG_Project\DEVPROG_Project\obj\Debug\netstandard2.0\ref\DEVPROG_Project.dll
 C:\Users\walra\Desktop\DEVPROG_Project\DEVPROG_Project\DEVPROG_Project\obj\Debug\netstandard2.0\DEVPROG_Project.pdb
+C:\Users\walra\Desktop\DEVPROG_Project\DEVPROG_Project\DEVPROG_Project\obj\Debug\netstandard2.0\Views\FamilyList.xaml.g.cs
+C:\Users\walra\Desktop\DEVPROG_Project\DEVPROG_Project\DEVPROG_Project\obj\Debug\netstandard2.0\Views\FilteredCharacterListPage.xaml.g.cs

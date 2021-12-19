@@ -30,6 +30,9 @@ namespace DEVPROG_Project
             {
                 Debug.WriteLine(item.FullName);
             }
+
+            
+
         }
 
         private void btnShowList_Clicked(object sender, EventArgs e)
@@ -39,7 +42,7 @@ namespace DEVPROG_Project
 
         private void btwShowFamily_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new FamilyList());
         }
 
         private void btnShowRndm_Clicked(object sender, EventArgs e)

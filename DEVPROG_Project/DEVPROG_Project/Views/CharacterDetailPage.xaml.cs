@@ -35,7 +35,7 @@ namespace DEVPROG_Project.Views
 
         private void imgBackBtn(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new CharacterListPage());
+            Navigation.PushAsync(new MainPage());
         }
     }
 }
