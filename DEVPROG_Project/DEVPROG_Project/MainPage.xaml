@@ -16,6 +16,7 @@
         <Button x:Name="btwShowFamily" Clicked="btwShowFamily_Clicked"  Margin="0,28,0,0" Text="Family List" FontAttributes="Bold" FontSize="24" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="52"/>
         <Button x:Name="btnShowRndm" Clicked="btnShowRndm_Clicked" Margin="0,28,0,0" Text="Random Character" FontAttributes="Bold" FontSize="24" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="52"/>
         <Button x:Name="btnAddChar" Clicked="btnAddChar_Clicked" Margin="0,28,0,0" Text="Add Character" FontAttributes="Bold" FontSize="24" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="52"/>
+
     </StackLayout>
 
 

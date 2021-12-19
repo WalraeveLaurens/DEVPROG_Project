@@ -53,7 +53,7 @@ namespace DEVPROG_Project.Repositories
             //thronesapi id == 61bf5dbf0049eb1acc5e92ba
             using (HttpClient client = GetClient())
             {
-                //string url = $"https://trello.com/1/cards?idList=61bf617f2cb599048581bdde";
+                
                 string url = $"https://trello.com/1/cards?idList=61bf617f2cb599048581bdde&desc=Name=,&key=963581e2ec5b420ad03c9de6c3e3c5c8&token=49a8870bcb5469d01b0265bc95ef2b49b8a78a11ac3b336033e5b428536daf2d";
                 
 

@@ -27,13 +27,13 @@ namespace DEVPROG_Project.Views
             //id
 
             
-            string desc = 
-                FirstName.Text +
-                LastName.Text +
-                FirstName.Text +  " " + LastName.Text +
-                Title.Text +
-                Family.Text +  
-                ImageUrl.Text;
+            string desc = "First name: " + FirstName.Text + "\n" +
+                "Last Name: " + LastName.Text + "\n" +
+                "Full Name: " + FirstName.Text + " " + LastName.Text + "\n" +
+                "Title: " + Title.Text + "\n" +
+                "Family: " + Family.Text + "\n" +
+                "ImageUrl: " + ImageUrl.Text;  
+                
             CharacaterCard characaterCard = new CharacaterCard() { Name= FirstName.Text ,Description = desc };
 
             await ThronesRepository.AddCardAsync(characaterCard);

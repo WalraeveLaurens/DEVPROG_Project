@@ -64,5 +64,7 @@ namespace DEVPROG_Project
         {
             Navigation.PushAsync(new AddCharacterPage());
         }
+
+        
     }
 }
