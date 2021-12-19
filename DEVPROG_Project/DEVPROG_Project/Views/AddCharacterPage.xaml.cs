@@ -25,12 +25,24 @@ namespace DEVPROG_Project.Views
             int i = characters.Count();
             List<Character> NewCharacter = new List<Character>();
             //id
-            NewCharacter.AddRange(i++, FirstName.Text, LastName.Text, FirstName.Text +  " " + LastName.Text, Title.Text, Family.Text, "", ImageUrl.Text);
+
+            
+            string desc = 
+                FirstName.Text +
+                LastName.Text +
+                FirstName.Text +  " " + LastName.Text +
+                Title.Text +
+                Family.Text +  
+                ImageUrl.Text;
+            CharacaterCard characaterCard = new CharacaterCard() { Name= FirstName.Text ,Description = desc };
+
+            await ThronesRepository.AddCardAsync(characaterCard);
+
+            
 
 
-            //Character info = (Character)lvwCharacterList.SelectedItem;
-            //Navigation.PushAsync(new CharacterDetailPage());
-
+            Character info = new Character() { FirstName = FirstName.Text, LastName = LastName.Text, FullName = FirstName.Text + " " + LastName.Text, Family = Family.Text, ImageUrl = ImageUrl.Text, Title = Title.Text };
+            await Navigation.PushAsync(new CharacterDetailPage(info));
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
